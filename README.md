@@ -1,14 +1,23 @@
 speech Recognition
 
 Installed:
+
 (1)sudo apt-get install -y python python-dev python-pip build-essential swig git
+
 (2)sudo apt-get install libpulse-dev
+
 (3)sudo pip install pocketsphinx
+
 (4)git clone https://github.com/Uberi/speech_recognition.git
+
 (5)cd speech_recognition
+
 (6)sudo python setup.py install
+
 (7)sudo apt-get install portaudio19-dev
+
 (8)sudo pip install pyaudio
+
 (9)sudo apt-get install curl
 
 
@@ -47,21 +56,37 @@ Quick start:
 	
 	
 other	
+	
 	其中的 Sphinx 語音辨識是離線辨識,可利用減少辨識文字量
+	
 	(1) run MakeDicAndLm.py
+	
 	(2) 會產出 sample.dic,sample.lm
+	
 	(3) 
+	
 		3.1	
+	
 			sudo chmod 777 /usr/local/lib/python2.7/dist-packages/speech_recognition/pocketsphinx-data/en-US/
+	
 		3.2 
+	
 			放到 /usr/local/lib/python2.7/dist-packages/speech_recognition/pocketsphinx-data/en-US/
+	
 	(4) 
+	
 		4.1
+	
 			sudo chown -R ts /usr/local/lib/python2.7/dist-packages/speech_recognition/__init__.py
+	
 		4.2
+	
 			修正 /usr/local/lib/python2.7/dist-packages/speech_recognition/__init__.py中
+	
 			language-model.lm.bin -> sample.lm
+	
 			pronounciation-dictionary.dict -> sample.dic
+	
 		
 		
 		
