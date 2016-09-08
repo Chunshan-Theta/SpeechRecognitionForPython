@@ -25,6 +25,7 @@ Installed:
 Quick start:
 
 (1) 設定資料 
+	
 	1.1 打開 ./speech_recognition/examples/microphone_recognition.py
 	
 	1.2 用#號註解掉不用的語音辨識，留下 Sphinx、Wit.ai、api.ai,並將TOKEN補上
